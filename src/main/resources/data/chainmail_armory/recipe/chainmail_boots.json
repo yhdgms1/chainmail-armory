@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "item": "chainmail_armory:chainmail_plate"
+    }
+  },
+  "result": {
+    "id": "minecraft:chainmail_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "P P"
+  ],
+  "key": {
+    "P": {
+      "item": "chainmail_armory:chainmail_plate"
+    }
+  },
+  "result": {
+    "id": "minecraft:chainmail_helmet",
+    "count": 1
+  }
+}
