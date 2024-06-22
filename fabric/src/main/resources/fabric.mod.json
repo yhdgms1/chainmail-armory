@@ -1,0 +1,33 @@
+{
+    "schemaVersion": 1,
+    "id": "${mod_id}",
+    "version": "${version}",
+    "name": "${mod_name}",
+    "description": "${description}",
+    "authors": [
+        "${mod_author}"
+    ],
+    "contact": {
+        "homepage": "https://github.com/yhdgms1/chainmail-armory",
+        "sources": "https://github.com/yhdgms1/chainmail-armory"
+    },
+    "license": "${license}",
+    "icon": "${mod_id}.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "dev.yhdgms1.chainmail_armory.ChainmailArmory"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=${fabric_loader_version}",
+        "fabric-api": "*",
+        "minecraft": "${minecraft_version}",
+        "java": ">=${java_version}"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}
+  
