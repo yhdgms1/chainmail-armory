@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "chainmail-armory",
+	"version": "1.1.0",
+	"name": "Chainmail Armory",
+	"description": "Adds crafting recipe for chainmail armor.",
+	"authors": [
+		"yhdgms1"
+	],
+	"contact": {
+		"homepage": "https://github.com/yhdgms1/chainmail-armory",
+		"sources": "https://github.com/yhdgms1/chainmail-armory"
+	},
+	"license": "MIT",
+	"icon": "chainmail_armory.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.yhdgms1.chainmail_armory.ChainmailArmory"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

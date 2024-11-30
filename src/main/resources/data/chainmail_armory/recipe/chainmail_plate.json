@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NN ",
+    "NN "
+  ],
+  "key": {
+    "N": "minecraft:iron_nugget"
+  },
+  "result": {
+    "id": "chainmail_armory:chainmail_plate",
+    "count": 1
+  }
+}
