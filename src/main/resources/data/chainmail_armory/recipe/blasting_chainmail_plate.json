@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": "chainmail_armory:chainmail_plate",
+  "result": {
+    "id": "minecraft:iron_nugget"
+  },
+  "experience": 0.1,
+  "cookingtime": 50
+}
