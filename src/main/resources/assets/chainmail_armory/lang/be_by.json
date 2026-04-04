@@ -1,4 +1,8 @@
 {
-  "itemGroup.chainmail_armory": "Кальчужны арсенал",
-  "item.chainmail_armory.chainmail_plate": "Кальчуга"
+  "creativeTab.chainmail_armory": "Кальчужны арсенал",
+  "item.chainmail_armory.chainmail_plate": "Кальчуга",
+
+  "modmenu.nameTranslation.chainmail-armory": "Кальчужны арсенал",
+  "modmenu.summaryTranslation.chainmail-armory": "Добавляет крафт кольчужной брони",
+  "modmenu.descriptionTranslation.chainmail-armory": "Крафт:\n\nЗ чатырох кавалкаў жалеза атрымліваецца адна кальчуга, з якой можна крафт прадметы кальчужнай броні.\n\n\nПераплаўка:\n\nЗ адной кальчужнай пласціны атрымліваецца адзін кавалак жалеза."
 }

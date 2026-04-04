@@ -1,40 +1,35 @@
 package dev.yhdgms1.chainmail_armory;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.util.Identifier;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class ChainmailArmory implements ModInitializer {
 	public static final String MOD_ID = "chainmail_armory";
 
-	public static final Identifier CHAINMAIL_PLATE_ID = id("chainmail_plate");
-	public static final RegistryKey<Item> CHAINMAIL_PLATE_KEY = RegistryKey.of(RegistryKeys.ITEM, CHAINMAIL_PLATE_ID);
+	private static final ResourceKey<Item> CHAINMAIL_PLATE_KEY = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ChainmailArmory.MOD_ID, "chainmail_plate"));
+	private static final ResourceKey<CreativeModeTab> CREATIVE_MODE_TAB_KEY = ResourceKey.create(BuiltInRegistries.CREATIVE_MODE_TAB.key(), Identifier.fromNamespaceAndPath(ChainmailArmory.MOD_ID, "creative_tab"));
 
-	public static final Item CHAINMAIL_PLATE = new Item(new Item.Settings().registryKey(CHAINMAIL_PLATE_KEY));
-
-	public static final ItemGroup ITEM_GROUP = FabricItemGroup.builder()
+	public static final Item CHAINMAIL_PLATE = new Item(new Item.Properties().setId(CHAINMAIL_PLATE_KEY));
+	public static final CreativeModeTab CREATIVE_MODE_TAB = FabricCreativeModeTab.builder()
 			.icon(() -> new ItemStack(CHAINMAIL_PLATE))
-			.displayName(Text.translatable("itemGroup.chainmail_armory"))
-			.entries((context, entries) -> {
-				entries.add(CHAINMAIL_PLATE);
+			.title(Component.translatable("creativeTab.chainmail_armory"))
+			.displayItems((params, output) -> {
+				output.accept(CHAINMAIL_PLATE);
 			})
 			.build();
 
 	@Override
 	public void onInitialize() {
-		Registry.register(Registries.ITEM, CHAINMAIL_PLATE_KEY, CHAINMAIL_PLATE);
-		Registry.register(Registries.ITEM_GROUP, id("chainmail_armory_tab"), ITEM_GROUP);
-	}
-
-	public static Identifier id(String path) {
-		return Identifier.of(MOD_ID, path);
+		Registry.register(BuiltInRegistries.ITEM, CHAINMAIL_PLATE_KEY, CHAINMAIL_PLATE);
+		Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, CREATIVE_MODE_TAB_KEY, CREATIVE_MODE_TAB);
 	}
 }

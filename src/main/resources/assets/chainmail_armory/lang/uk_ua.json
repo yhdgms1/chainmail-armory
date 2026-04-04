@@ -1,4 +1,8 @@
 {
-  "itemGroup.chainmail_armory": "Кольчужний арсенал",
-  "item.chainmail_armory.chainmail_plate": "Кольчуга"
+  "creativeTab.chainmail_armory": "Кольчужний арсенал",
+  "item.chainmail_armory.chainmail_plate": "Кольчуга",
+
+  "modmenu.nameTranslation.chainmail-armory": "Кольчужний арсенал",
+  "modmenu.summaryTranslation.chainmail-armory": "Додає крафт кольчужної броні",
+  "modmenu.descriptionTranslation.chainmail-armory": "Крафт:\n\nЗ чотирьох самородків заліза виходить одна кольчуга, з якої можна крафтити предмети кольчужної броні.\n\n\n\nПереплавляння:\n\nЗ однієї кольчужної пластини виходить один самородок заліза."
 }
