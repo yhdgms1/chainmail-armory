@@ -1,9 +1,0 @@
-{
-  "creativeTab.chainmail_armory": "Chainmail Armory",
-  "item.chainmail_armory.chainmail_plate": "Chainmail Plate",
-
-  "modmenu.nameTranslation.chainmail-armory": "Chainmail Armory",
-  "modmenu.summaryTranslation.chainmail-armory": "Adds crafting recipe for chainmail armor.",
-  "modmenu.descriptionTranslation.chainmail-armory": "Crafting:\n\nFour iron nuggets make one chainmail plate, from which you can craft items of chainmail armor.\n\n\nRemelting:\n\nOne iron nugget is obtained from one chainmail plate."
-
-}

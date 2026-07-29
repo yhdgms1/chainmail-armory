@@ -1,8 +1,0 @@
-{
-  "creativeTab.chainmail_armory": "Кольчужный арсенал",
-  "item.chainmail_armory.chainmail_plate": "Кольчуга",
-
-  "modmenu.nameTranslation.chainmail-armory": "Кольчужный арсенал",
-  "modmenu.summaryTranslation.chainmail-armory": "Добавляет крафт кольчужной брони",
-  "modmenu.descriptionTranslation.chainmail-armory": "Крафт:\n\nИз четырех кусочков железа получается одна кольчуга, из которой можно крафтить предметы кольчужной брони.\n\n\nПереплавка:\n\nИз одной кольчужной пластины получается один кусочек железа."
-}

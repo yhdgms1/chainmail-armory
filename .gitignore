@@ -4,6 +4,11 @@
 build/
 out/
 classes/
+build-logic/.gradle/
+build-logic/build/
+common/build/
+fabric/build/
+neoforge/build/
 
 # eclipse
 
@@ -28,9 +33,13 @@ bin/
 
 *.DS_Store
 
-# fabric
+# runs
 
 run/
+runs/
+fabric/runs/
+neoforge/runs/
+common/runs/
 
 # java
 
